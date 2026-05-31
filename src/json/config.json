@@ -1,0 +1,45 @@
+{
+    "websocket": {
+        "host": "127.0.0.1",
+        "port": 2096,
+        "ssl": {
+            "enabled": false,
+            "cert": "/path/to/cert.pem",
+            "key": "/path/to/key.pem"
+        },
+        "ratelimits": {
+            "enabled": true,
+            "room_create": {
+                "requests": 3,
+                "interval": 20
+            },
+            "room_find": {
+                "requests": 10,
+                "interval": 10
+            },
+            "ws_open": {
+                "requests": 10,
+                "interval": 60
+            },
+            "ws_message": {
+                "requests": 100,
+                "interval": 15
+            }
+        },
+        "ratelimits_cleanup_interval": 10
+    },
+    "rooms": {
+        "code_length": 4,
+        "forbidden_codes": [
+            "CENS",
+            "ORED"
+        ],
+        "lifetime": 7200,
+        "audience_limit": 100,
+        "password_length": 5
+    },
+    "players": {
+        "max_name_length": 12,
+        "kick_by_ip": true
+    }
+}

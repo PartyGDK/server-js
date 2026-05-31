@@ -1,0 +1,31 @@
+{
+    "apps": {
+        "gen-z-humor-2": {
+            "name": "ЗуМЕМ 2",
+            "players": {
+                "min": 3,
+                "max": 8
+            },
+            "audience_enabled": true,
+            "moderation_enabled": true
+        },
+        "test-app": {
+            "name": "Тестовое приложение",
+            "players": {
+                "min": 1,
+                "max": 8
+            },
+            "audience_enabled": true,
+            "moderation_enabled": true
+        },
+        "adjust": {
+            "name": "Подстройся",
+            "players": {
+                "min": 3,
+                "max": 8
+            },
+            "audience_enabled": true,
+            "moderation_enabled": true
+        }
+    }
+}
